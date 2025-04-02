@@ -1,0 +1,29 @@
+#  JavaScript
+
+- kintamieji (atminties lasteles, duomenu tipai):
+    - tekstas (string)
+    - skaiciai (number)
+    - logines reiksmes (boolean)
+    - sarasas (array)
+    - objektas (object)
+    - null
+    - undefined 
+- funkcijos (perpanaudojamas kodo blokas/logika):
+    - "paprasta"
+    - rodykline
+    - metodai:
+         - string methods
+         - number methods
+         - Math biblioteka
+         - array methods
+         - object methods
+- palyginimas:
+    - if
+    - ternary
+    - swich
+- ciklas:
+    - for
+    - while
+    - for-of
+    - for-in
+- ivykiu stebejimas (event listeners)

@@ -1,0 +1,34 @@
+{
+  "name": "naujas-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "string-reverse": "node --watch ./task/string-reverse.js",
+    "interval-count": "node --watch ./task/interval-count.js",
+    "digit-count": "node --watch ./task/digit-count.js",
+    "nd": "node --watch ./nd.js",
+    "praktika": "node --watch ./praktika.js",
+    "multiply":"node --watch ./task/multiply.js",
+    "marks-average": "node --watch ./task/marks-average.js",
+    "adult": "node --watch ./task/adult.js",
+    "interval-sum": "node --watch ./task/interval-sum.js",
+    "multi-table": "node --watch ./task/multi-table.js",
+    "number": "node --watch ./1-number.js",
+    "string": "node --watch ./2-string.js",
+    "function": "node --watch ./3-function.js",
+    "boolean": "node --watch ./4-boolean.js",
+    "if": "node --watch ./5-if.js",
+    "array": "node --watch ./6-array.js",
+    "typeof": "node --watch ./7-typeof.js",
+    "for": "node --watch ./8-for.js",
+    "object.js": "node --watch ./9-object.js",
+    "math": "node --watch ./10-math.js",
+    "method:string": "node --watch ./11-method-string.js"
+
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
