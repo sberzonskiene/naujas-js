@@ -362,7 +362,7 @@ function raide (pirmoji) {
     if ( 'a' === text[0]) {
         return (`prasideda raide 'a'`)
     } else {
-        return (`neprasideda raide 'a`)
+        return (`neprasideda raide 'a'`)
     }
 }
 
