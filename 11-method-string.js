@@ -143,7 +143,7 @@ console.log('labas'.toUpperCase());
 console.log('\ntoLowerCase');
 console.log('LABAS'.toLowerCase());
 
-// SLICE
+// slice
 console.log('\nslice');
 
 console.log('pomidoras'.slice());
@@ -162,3 +162,62 @@ console.log('pomidoras'.slice(3, -3));
 console.log('pomidoras'.slice(-4));
 console.log('pomidoras'.slice(-6, -2));
 
+// trim
+console.log('\ntrim');
+
+console.log(`"${'pomidoras'.trim()}"`);
+console.log(`"${      'pomidoras'.trim()}"`);
+console.log(`"${'pomidoras'     .trim()}"`);
+console.log(`"${'    pomidoras    '.trim()}"`);
+console.log(`"${'   labas   rytas   '.trim()}"`); //pasalina tarpus tik pradzioje ir gale.
+console.log(`"${'   labas   rytas   '.trimEnd()}"`);
+console.log(`"${'   labas   rytas   '.trimStart()}"`);
+
+// split - dalina i atskiras dalis
+console.log('\nsplit');
+
+const t1 = 'zodis';
+const t1Parts = t1.split();
+const t1Parts2 = t1.split('o');
+const t1Parts3 = t1.split('d');
+
+console.log(t1Parts);
+console.log(t1Parts2);
+console.log(t1Parts3);
+
+const t2 = 'kultivatorius';
+const t2Parts = t2.split('t');
+console.log(t2Parts);
+
+const t3 = 'Labas rytas Lietuva';
+const t3Parts = t3.split(' ');
+console.log(t3Parts);
+
+console.log('ana'.split('a'));
+console.log('vasara'.split(''));
+
+const t4 = 'Labas. Ka veiki. Kaip gyveni.'
+const sentenceCount = t4.split('.').length -1;
+console.log(sentenceCount);
+
+// charCodeAt
+console.log('\ncharCodeAt');
+
+console.log('a'.charCodeAt(0));
+console.log('A'.charCodeAt(0));
+
+
+if ( 'A' > 'a') {
+    console.log('daugiau');
+} else {
+    console.log('maziau');
+}
+
+if ( 'labas' > 'iki') {
+    console.log('daugiau');
+} else {
+    console.log('maziau');
+}
+
+const s1 = String.fromCharCode(65);
+console.log(s1);
