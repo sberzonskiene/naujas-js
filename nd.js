@@ -17,9 +17,7 @@ console.log (a, b);
 
 console.log(a+b+c);
 
-
 /* 1 užduotis - mokytojo suvestinė:
-
 Susikurkite bent 6 sąrašo (array) tipo kintamuosius, kurių pirmas narys yra mokinio vardas, 
 o toliau yra 5 skaičiaus tipo mokinio pažymiai
 Sukurkite funkciją, kuri padaro šiuos veiksmus:
@@ -87,7 +85,6 @@ MokinioVidurkis(Mokinys15);
 console.log();
 
 /*2 užduotis - filmų rekomendacija:
-
 Susikurkite bent 5 sąrašo tipo kintamuosius, kurių pirmas narys yra filmo pavadinimas, 
 antras narys yra filmo žanras, o trečias narys yra skaičiaus tipo filmo įvertis.
 Susikurkite 2 kintamuosius kurie -pirmas nurodo jūsų mėgstamą žanrą ir 
@@ -133,7 +130,6 @@ function filmoPasiulymas (filmasA, filmasB, filmasC, balas, zanras)
 
 filmoPasiulymas(filmas1, filmas2, filmas4, ManoBalas, ManoZanras);
 
-
 console.clear();
 
 /* Užduotys su IF ir sąrašais(array)
@@ -148,13 +144,10 @@ console.log('numbers:', 1);
 console.log('numbers:', 2);
 console.log('numbers:', 3);
 
-
 for (let i = 0; i < 4; i++) {
 
     console.log('numbers:', i);
 }
-
-
 
 /*2. Patikrinkite, ar masyvas tuščias.
 a. Pavyzdys: Patikrinkite, ar sąrašas [] yra tuščias.*/
@@ -177,7 +170,6 @@ if(numbers1 <= 0) {
 } else {
     console.log('yra teigiamu skaiciu');
 }
-
 
 /*4. Patikrinkite, ar visi sąrašo skaičiai yra lyginiai.
 a. Pavyzdys: Patikrinkite, ar [2, 4, 6] yra tik lyginiai skaičiai.
@@ -237,7 +229,6 @@ function sum1(a1, b1) {
 console.log(sum1(4, 4));  
 
 console.log(4**2);
-
 
 const vv = 4
 function sum1(vd) {
@@ -354,9 +345,8 @@ console.log('-----');
 
 //9. Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
 
-
-const text ='arbata';
-const firstSymbol = text[0];
+const text ='arbata';                     // kazkas ne taip...
+const firstSymbol = text[0];    
 
 function raide (pirmoji) {
     if ( 'a' === text[0]) {
@@ -369,7 +359,7 @@ function raide (pirmoji) {
 console.log(firstSymbol);
 
 
-const text1 = 'arbata';
+const text1 = 'arbata';                // nasigavo
 const firstSymbol1 = text1[0];
 
 function raide (pirmoji) {
@@ -383,15 +373,100 @@ function raide (pirmoji) {
     }
 }
 
-
-
-
-
-
-
-
 /*10. Sukurkite funkciją trijų skaičių vidurkiui rasti.
 11. Sukurkite funkciją, grąžinančią teksto tipo kintamojo ilgį.
 12. Sukurkite funkciją dviem eilutėms sujungti.
 13. Sukurkite funkciją, kuri tikrina, ar skaičius yra tarp dviejų reikšmių (imtinai */
 
+console.log('-----');
+// FOR CIKLAS
+// 1. Spausdinkite skaičius nuo 1 iki 10 naudodami for ciklą.
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+console.log('-----');
+//2. Spausdinkite skaičius nuo 10 iki 1 atvirkštine tvarka naudodami for ciklą.
+
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+console.log('-----');
+//3. Spausdinkite kiekvieną lyginį skaičių nuo 0 iki 20 naudodami for ciklą.
+
+for (let i=0; i<21; i+=2) {
+    console.log(i);
+}
+
+console.log('-----');
+//4. Spausdinkite kiekvieną nelyginį skaičių nuo 0 iki 20 naudodami for ciklą.
+
+for (let i=1; i<20; i+=2) {
+    console.log(i);
+}
+
+console.log('-----');
+//5. Išspausdinkite pirmuosius 10 skaičių kvadratų (1^2, 2^2, 3^2 ir t. t.).
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}^2`);
+}
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}**2 = ${i**2}`);
+}
+
+console.log('-----');
+//6. Išspausdinkite pirmuosius 10 skaičių kubų (1^3, 2^3, 3^3 ir t. t.).
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}^3`);
+}
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}**3 = ${i**3}`);
+}
+
+console.log('-----');
+//7. Atspausdinkite 7 daugybos lentelę (7 × 1, 7 × 2 ir t. t.).
+
+for (let k = 1; k <= 10; k++) {
+    console.log(`7 * ${k} = ${7 * k}`);
+}
+
+console.log('-----');
+
+//8. Atspausdinkite nuo 1 iki 5 žvaigždučių (*) seriją (pvz., *, **, *** ir t. t.).
+
+let star = '';
+for (let z = 1; z <= 5; z++) {
+    star = star + '*'
+    console.log(star);
+    }    
+
+console.log('-----');
+
+//9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
+
+/*10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3.
+11. Spausdinti skaičius nuo 1 iki 50 imtinai, kurie dalijasi iš 5.
+12. Spausdinti skaičius nuo 1 iki 100, kurie dalijasi ir iš 3, ir iš 5.
+13. Sukurkite for ciklą, kuris penkis kartus išspausdintų "Hello, World!".
+Sunkesnės užduotys:
+1. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 100, tačiau kiekvieną skaičių, kuris
+dalijasi iš 4, reikia pakeisti žodžiu „Fizz“.
+2. Spausdinkite skaičius nuo 1 iki 100, bet skaičius, kurie dalijasi iš 3, pakeiskite "Fizz",
+skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiejų, - "FizzBuzz".
+3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje.
+4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
+"Even", o prie kiekvieno nelyginio - "Odd".
+5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.
+6. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30, bet tik tuos, kurie dalijasi iš 2
+arba 3.
+7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
+pranešimą.
+8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
+9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
+*/
