@@ -59,7 +59,12 @@ console.log(parseInt('labas111'));
 console.log(parseInt('222labas'));  // skaito skaicius tik pradzioje
 console.log(parseInt('222labas3333'));
 
-console.log(parseInt('222labas3333'));
+console.log('-------');
+console.log(parseInt('222labas333'.replace('labas', '')));
+console.log(parseInt('222333')); // taip padaro replace
+
+console.log(parseInt('222labas333'.split('labas')));
+console.log(parseInt(['222', '333'])); // taip padaro split
 
 console.log('-------');
 
@@ -81,3 +86,25 @@ console.log(parseFloat('44'));
 console.log(parseFloat('44'));
 
 // Number.EPSILON - paziureti patiems
+console.log('-------');
+
+const a = 12.3456789;
+console.log(a);
+console.log(typeof a); // sukuria 'stringa'
+console.log(typeof typeof a);
+console.log(typeof 'number');
+console.log('string');
+
+const b = a.toFixed(4); // paima atitinkama kieki skaiciaus po kableio sukurti naujam skaiciui
+console.log(b);
+console.log(typeof b);
+
+const c = parseFloat(b); // type of jau supranta kaip skaiciu
+console.log(c);
+console.log(typeof c);
+
+console.log(3.14.toFixed(0));
+console.log(3.14.toFixed(1));
+console.log(3.14.toFixed(2));
+console.log(3.14.toFixed(3));
+console.log(3.14.toFixed(4));
