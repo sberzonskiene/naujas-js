@@ -325,11 +325,11 @@ console.log(plotas1);
 
 let num = 9;
 let num1 = 3
-let num2 = 3.6;
+let num2 = 3.6; // kaip su tokiu?
 let num3 = 5
 
-function skaicius (a) {  //nesigauna
-    if ( a%1 === 0 ) {
+function skaicius (a) {  
+    if ( a%3 === 0 ) {
         return ('dalijasi')
     } else {
         return ('nesidalija')
@@ -345,33 +345,16 @@ console.log('-----');
 
 //9. Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
 
-const text ='arbata';                     // kazkas ne taip...
-const firstSymbol = text[0];    
-
-function raide (pirmoji) {
-    if ( 'a' === text[0]) {
-        return (`prasideda raide 'a'`)
+function firstSymbol (zodis) {
+    if ( zodis[0] === 'a') {
+        return true
     } else {
-        return (`neprasideda raide 'a'`)
+        return false
     }
 }
+console.log(firstSymbol('arbata'));
 
-console.log(firstSymbol);
-
-
-const text1 = 'arbata';                // nasigavo
-const firstSymbol1 = text1[0];
-
-function raide (pirmoji) {
-    let pirmaRaide = true;
-    if ( pirmaRaide === text1[0]) {
-        console.log(`prasideda 'a'`)
-    }
-    if ( pirmaRaide !== text1[0]) {
-        console.log(`neprasideda 'a'`)
-        pirmaRaide = false;
-    }
-}
+console.log('-----');
 
 /*10. Sukurkite funkciją trijų skaičių vidurkiui rasti.
 11. Sukurkite funkciją, grąžinančią teksto tipo kintamojo ilgį.
@@ -450,29 +433,77 @@ console.log('-----');
 
 //9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
 
-let star1 = ''
-for (let z = 5;  z >= 1; z--) {
-    star1 = star1 + '*'
-    console.log(star1);
-    }    
+let stars = '';                        //nesigavo
+for (let i = 5; i >=1 ; i--) {
+    stars = stars + '*'
+    console.log(stars);
+}
 
-    let star2 = '';
-for (let z = 1; z <= 5; z++) {
-    star = star + '*'
-    for ( let k = 5; k>=1; k--)
-        star = star + '*'   
-    console.log(star);
-    }    
-/*10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3.
-11. Spausdinti skaičius nuo 1 iki 50 imtinai, kurie dalijasi iš 5.
-12. Spausdinti skaičius nuo 1 iki 100, kurie dalijasi ir iš 3, ir iš 5.
-13. Sukurkite for ciklą, kuris penkis kartus išspausdintų "Hello, World!".
-Sunkesnės užduotys:
-1. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 100, tačiau kiekvieną skaičių, kuris
-dalijasi iš 4, reikia pakeisti žodžiu „Fizz“.
-2. Spausdinkite skaičius nuo 1 iki 100, bet skaičius, kurie dalijasi iš 3, pakeiskite "Fizz",
-skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiejų, - "FizzBuzz".
-3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje.
+console.log('-----');
+//10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3.
+
+for (let i = 1; i < 50; i++) {
+    if (i%3 === 0) {
+    console.log(i)
+    }
+}
+
+console.log('-----');
+//11. Spausdinti skaičius nuo 1 iki 50 imtinai, kurie dalijasi iš 5.
+
+for (let k = 1; k <= 50; k++) {
+    if (k%5 === 0) {
+    console.log(k)
+    }
+}
+
+console.log('-----');
+//12. Spausdinti skaičius nuo 1 iki 100, kurie dalijasi ir iš 3, ir iš 5.
+
+for (let k = 1; k <= 100; k++) {
+    if (k%3 === 0 && k%5 === 0) {
+    console.log(k)
+    }
+}
+
+console.log('-----');
+//13. Sukurkite for ciklą, kuris penkis kartus išspausdintų "Hello, World!".
+
+for ( let i = 1; i <= 5; i++) {
+    console.log("Hello, Word")
+}
+
+console.log('-----');
+//Sunkesnės užduotys:
+/*1. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 100, tačiau kiekvieną skaičių, kuris
+dalijasi iš 4, reikia pakeisti žodžiu „Fizz“.*/
+
+for (let i = 1; i<= 100; i++) {
+    if(i%4 === 0) {
+        console.log("Fizz")
+    } else { 
+    console.log(i)
+    }
+}
+console.log('-----');
+/*2. Spausdinkite skaičius nuo 1 iki 100, bet skaičius, kurie dalijasi iš 3, pakeiskite "Fizz",
+skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiejų, - "FizzBuzz". */
+
+for (let i = 1; i<= 100; i++) {
+    if(i%3 === 0) {
+        console.log("Fizz")
+    }  if (i%5 === 0) { 
+        console.log("Buzz")
+    }  if (i%3 === 0 && i%5 ===0) {
+        console.log("FizzBuzz")
+    } else {
+        console.log(i)
+    }
+}
+
+
+
+/*3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????
 4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
 "Even", o prie kiekvieno nelyginio - "Odd".
 5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.

@@ -10,6 +10,7 @@ console.log(moneyFormat(3.1));
 console.log(moneyFormat(3.5));
 console.log(moneyFormat(3.99));
 
+console.log('--------');
 // kitas pavyzdys
 function moneyFormat2(money) {                                                      // 3.1
     //is "money" reikia gauti dali po kablelio                                      // 0.1
@@ -29,27 +30,54 @@ function moneyFormat2(money) {                                                  
     // ir galiausiai prideti " Eur"
 }
 
+console.log('--------');
+
+function moneyFormat3(money) {
+    return money.toFixed(2) + ' Eur';
+}
 
 function moneyFormat3(money) {
     const strMoney = '' + money;
      // '3.4'
     const dotPosition = strMoney.indexOf('.'); // 1 
+
     if (dotPosition === -1) {
-        return money + '.'
+        return money + '.00 Eur'
     }
-    const afterDot = strMoney.slice(dotPosition+1); // '4'
+    const afterDot = strMoney.slice(dotPosition + 1); // '4'
     
     if (afterDot.length === 1) {
         return money + ' 0 Eur';
     }
-
-    if (afterDot.length === 2) {
-        return money + ' Eur';
-}
+    return money + ' Eur';
 
 }
-
 console.log(moneyFormat2(3));
 console.log(moneyFormat2(3.1));
 console.log(moneyFormat2(3.5));
 console.log(moneyFormat2(3.99));
+
+console.log('--------');
+
+
+function moneyFormat(money) {
+    return money.toFixed(2) + ' Eur';
+}
+ 
+function moneyFormat2(money) {
+    const strMoney = '' + money;
+    const dotPosition = strMoney.indexOf('.');
+ 
+    if (dotPosition === -1) {
+        return money + '.00 Eur';
+    }
+ 
+    const afterDot = strMoney.slice(dotPosition + 1);
+ 
+    if (afterDot.length === 1) {
+        return money + '0 Eur';
+    }
+ 
+    return money + ' Eur';
+}
+ 
