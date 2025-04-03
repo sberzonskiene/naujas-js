@@ -450,6 +450,19 @@ console.log('-----');
 
 //9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
 
+let star1 = ''
+for (let z = 5;  z >= 1; z--) {
+    star1 = star1 + '*'
+    console.log(star1);
+    }    
+
+    let star2 = '';
+for (let z = 1; z <= 5; z++) {
+    star = star + '*'
+    for ( let k = 5; k>=1; k--)
+        star = star + '*'   
+    console.log(star);
+    }    
 /*10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3.
 11. Spausdinti skaičius nuo 1 iki 50 imtinai, kurie dalijasi iš 5.
 12. Spausdinti skaičius nuo 1 iki 100, kurie dalijasi ir iš 3, ir iš 5.
