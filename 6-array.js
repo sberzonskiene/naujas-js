@@ -53,6 +53,7 @@ sentence2 = sentence2 += dictionary[4] + ',';
 sentence2 = sentence2 += dictionary[5] + ', ';
 console.log(sentence2);
 
+let index = 0;
 let sentence3 = 'Patiekalui reikes: ';
 sentence3 = dictionary[index] + ', ';
 console.log(sentence3);
