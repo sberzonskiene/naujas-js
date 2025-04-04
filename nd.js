@@ -433,12 +433,13 @@ console.log('-----');
 
 //9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
 
-let stars = '';                        //nesigavo
-for (let i = 5; i >=1 ; i--) {
-    stars = stars + '*'
-    console.log(stars);
+for (let i = 5; i>=1; i--) {
+    let stars1 = '';
+    for (let z = i; z >=1; z--) {
+        stars1 = stars1 + '*';
+    }
+    console.log(stars1);
 }
-
 console.log('-----');
 //10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3.
 
@@ -491,20 +492,25 @@ skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiej
 
 for (let i = 1; i<= 100; i++) {
     if(i%3 === 0) {
-        console.log("Fizz")
+        console.log("Fizz", i)
     }  if (i%5 === 0) { 
-        console.log("Buzz")
+        console.log("Buzz" , i)
     }  if (i%3 === 0 && i%5 ===0) {
         console.log("FizzBuzz")
     } else {
         console.log(i)
     }
 }
+console.log('-----');
+//3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????let FibonačioSeka = 
+
+for (let i = 0; i<=11; i++){
 
 
 
-/*3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????
-4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
+}
+
+/*4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
 "Even", o prie kiekvieno nelyginio - "Odd".
 5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.
 6. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30, bet tik tuos, kurie dalijasi iš 2
@@ -514,3 +520,5 @@ pranešimą.
 8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
 9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
 */
+
+
