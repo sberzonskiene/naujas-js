@@ -354,8 +354,6 @@ function firstSymbol (zodis) {
 }
 console.log(firstSymbol('arbata'));
 
-console.log('-----');
-
 /*10. Sukurkite funkciją trijų skaičių vidurkiui rasti.
 11. Sukurkite funkciją, grąžinančią teksto tipo kintamojo ilgį.
 12. Sukurkite funkciją dviem eilutėms sujungti.
@@ -505,9 +503,6 @@ console.log('-----');
 //3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????let FibonačioSeka = 
 
 for (let i = 0; i<=11; i++){
-
-
-
 }
 
 /*4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
