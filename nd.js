@@ -251,23 +251,33 @@ function big(a , b) {
 
 console.log(big(e,d));
 
-/*4.Sukurkite funkciją, kuri patikrintų, ar eilutėje yra žodis „JavaScript“. (dar nesimokinome)*/ 
+/*4.Sukurkite funkciją, kuri patikrintų, ar eilutėje yra žodis „JavaScript“.*/ 
 
-const zodis = word ();
-function word (JavaScript) 
+function word (ArYraZodis)
 {
-    let ArYraZodis = false;
     if (ArYraZodis === "JavaScript")
     {
-        console.log('yra zodis "JavaScript".');
-        ArYraZodis = true;
+        return ('yra zodis "JavaScript".')
     } 
-    if (ArYraZodis !== "JavaScriptls");
+    else
     {
-        console.log('nera zodzio "JavaScript".');
+        return ('nera zodzio "JavaScript".')
     }
 }
 
+
+function arLabas (zodis1)
+{
+    if(zodis1 ==='labas')
+    {
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+console.log(arLabas('Labas'));
 /*5. Sukurkite funkciją, tikrinančią, ar skaičius yra lyginis.*/
 
 const li = 8;
@@ -504,6 +514,8 @@ console.log('-----');
 
 for (let i = 0; i<=11; i++){
 }
+
+
 
 /*4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
 "Even", o prie kiekvieno nelyginio - "Odd".
