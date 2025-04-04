@@ -162,6 +162,7 @@ console.log('pomidoras'.slice(3, -3));
 console.log('pomidoras'.slice(-4));
 console.log('pomidoras'.slice(-6, -2));
 
+
 // trim
 console.log('\ntrim');
 
