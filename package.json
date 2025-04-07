@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "fancy-math": "node --watch ./task/fancy-math.js",
     "string-reverse": "node --watch ./task/string-reverse.js",
     "names-split-join": "node --watch ./task/names-split-join.js",
     "money-format": "node --watch ./task/money-format.js",
@@ -28,7 +29,8 @@
     "math": "node --watch ./10-math.js",
     "method:string": "node --watch ./11-method-string.js",
     "method:number": "node --watch ./12-method-number.js",
-    "method:array": "node --watch ./13-method-array.js"
+    "method:array": "node --watch ./13-method-array.js",
+    "arrow": "node --watch ./14-arrow.js"
 
 
 
