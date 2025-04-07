@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "string-reverse": "node --watch ./task/string-reverse.js",
+    "names-split-join": "node --watch ./task/names-split-join.js",
     "money-format": "node --watch ./task/money-format.js",
     "valid-name": "node --watch ./task/valid-name.js",
     "interval-count": "node --watch ./task/interval-count.js",
@@ -28,6 +29,7 @@
     "method:string": "node --watch ./11-method-string.js",
     "method:number": "node --watch ./12-method-number.js",
     "method:array": "node --watch ./13-method-array.js"
+
 
 
     
