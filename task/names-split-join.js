@@ -38,3 +38,5 @@ function correctSentence(text) {
     return parts[0] + ': ' + names.join(', ')+ '.';
 }
  console.log(correctSentence('Siuo metu klaseje yra: jonas, Maryte, peTRas, ONA.'));
+
+

@@ -265,20 +265,9 @@ function word (ArYraZodis)
     }
 }
 
-console.log(arLabas('JavaScript'));
+console.log(word('JavaScript'));
 
-
-function arLabas (zodis1)
-{
-    if(zodis1 ==='JavaScript')
-    {
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-console.log(arLabas('JavaScript'));
+console.log('-----');
 
 /*5. Sukurkite funkciją, tikrinančią, ar skaičius yra lyginis.*/
 
@@ -336,9 +325,9 @@ console.log(plotas1);
 //8. Sukurkite funkciją, kuri tikrina, ar skaičius dalijasi iš 3.
 
 let num = 9;
-let num1 = 3
-let num2 = 3.6; // kaip su tokiu?
-let num3 = 5
+let num1 = 3;
+let num2 = 2;
+let num3 = 5;
 
 function skaicius (a) {  
     if ( a%3 === 0 ) {
@@ -502,32 +491,83 @@ skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiej
 
 for (let i = 1; i<= 100; i++) {
     if(i%3 === 0) {
-        console.log("Fizz", i) 
+        console.log("Fizz")
     }  if (i%5 === 0) { 
-        console.log("Buzz" , i)
+        console.log("Buzz")
     }  if (i%3 === 0 && i%5 ===0) {
         console.log("FizzBuzz")
-    } else {
+    } if (i%3 !== 0 && i%5 !== 0) {
         console.log(i)
     }
 }
+
 console.log('-----');
-//3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????let FibonačioSeka = 
-
-for (let i = 0; i<=11; i++){
-}
-
-
+//3. Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje. ????let FibonačioSeka = 0 1 1 2 3 5 8 13 21 34
 
 /*4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
-"Even", o prie kiekvieno nelyginio - "Odd".
-5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.
-6. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30, bet tik tuos, kurie dalijasi iš 2
-arba 3.
-7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
-pranešimą.
-8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
-9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
-*/
+"Even", o prie kiekvieno nelyginio - "Odd".*/
+for ( let i = 1; i <+ 20; i++) {
+    if ( i%2 === 0) {
+        console.log("Even")
+    } else {
+        console.log("Odd")
+    }
+  }
+
+console.log('-----');
+//5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`4 * ${i} = ${4 * i}`);
+}
+console.log('-----');
+for (let i = 1; i <= 10; i++) {
+    console.log(`77 * ${i} = ${77 * i}`);
+}
+console.log('-----');
+/*6. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30, bet tik tuos, kurie dalijasi iš 2
+arba 3.*/
+
+for (let i = 1; i <= 30; i++) {
+    if (i%2 === 0) {
+        console.log(i)
+    } else {
+    if (i%3 === 0) {
+        console.log(i)
+    } }
+}
+console.log('-----');
+for  (let i = 1; i <= 30; i++) { // kai dalijasi is 2 ir is 3
+    if (i%2 === 0 && i%3 === 0) {
+        console.log(i)
+    } 
+}
+console.log('-----');
+/*7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
+pranešimą.*/
+let pirminis = 7;
+for  (let i = 0; i < 10; i++) { 
+    if (i%i === 0 && i%1 === 0) {
+        return 'TAIP'
+    } else {
+        return 'NE'
+    }
+}
+console.log(pirminis);
+//8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
+
+console.log('-----');
+//9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
+let suma = 0
+for  (let i = 2; i < 101; i+=2) 
+{
+    suma = suma + i
+}
+
+    console.log(suma); 
+
+console.log('-----');
+
+
 
 
