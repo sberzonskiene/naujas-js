@@ -31,7 +31,6 @@ function correctSentence(text) {
 
         const newName = firstLetter + restName;
         names[i] = newName;
-
     }
 
     console.log(names);

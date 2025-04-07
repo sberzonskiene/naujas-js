@@ -265,10 +265,12 @@ function word (ArYraZodis)
     }
 }
 
+console.log(arLabas('JavaScript'));
+
 
 function arLabas (zodis1)
 {
-    if(zodis1 ==='labas')
+    if(zodis1 ==='JavaScript')
     {
         return true;
     }
@@ -276,8 +278,8 @@ function arLabas (zodis1)
         return false;
     }
 }
+console.log(arLabas('JavaScript'));
 
-console.log(arLabas('Labas'));
 /*5. Sukurkite funkciją, tikrinančią, ar skaičius yra lyginis.*/
 
 const li = 8;
