@@ -545,15 +545,15 @@ for  (let i = 1; i <= 30; i++) { // kai dalijasi is 2 ir is 3
 console.log('-----');
 /*7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
 pranešimą.*/
-let pirminis = 7;
+let pirminis = 7
 for  (let i = 0; i < 10; i++) { 
-    if (i%i === 0 && i%1 === 0) {
+    if (i%2 === 0 && i%3 === 0) {
         return 'TAIP'
     } else {
         return 'NE'
     }
 }
-console.log(pirminis);
+
 //8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
 
 console.log('-----');
