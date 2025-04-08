@@ -542,20 +542,40 @@ for  (let i = 1; i <= 30; i++) { // kai dalijasi is 2 ir is 3
         console.log(i)
     } 
 }
-console.log('-----');
+console.clear();
 /*7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
-pranešimą.*/
-let pirminis = 7
-for  (let i = 0; i < 10; i++) { 
-    if (i%2 === 0 && i%3 === 0) {
-        return 'TAIP'
-    } else {
-        return 'NE'
+pranešimą.    isspresta pagal pavyzdi */
+let nr = 7;
+function yraPirm (sk) {
+    if (sk <= 1) {
+        return false
+    } if (sk <= 3) {
+        return true
+    } if (sk%2 === 0 || sk%3 === 0) {
+        return false
     }
-}
+for (let i = 5; i * i <= sk; i += 6) {
+    if (sk%1 === 0 || sk%(i + 2) === 0) {
+        return false
+    } }
+    return true
+} 
+console.log(yraPirm(nr));
 
+/*for (let i = 2; i < 20; i++) {          // Nesigauna
+    if (i%2 === 0 || i%3 === 0) {
+        console.log(i, 'antrinis')
+    } else {
+    if (2/2 === 1 && 3/3 === 1) {
+        console.log(i, 'pirminis')
+    }
+} }
+console.log('--------');
 //8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
-
+for (let i = 2; i<= 10; i++) {
+    if(i/2 !== 0 || i/3 !== 0) {   // Nesigauna
+        console.log(i)
+}}*/
 console.log('-----');
 //9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
 let suma = 0
@@ -563,8 +583,7 @@ for  (let i = 2; i < 101; i+=2)
 {
     suma = suma + i
 }
-
-    console.log(suma); 
+console.log(suma); 
 
 console.log('-----');
 
