@@ -37,7 +37,8 @@
     "while": "node --watch ./17-while.js",
     "for-in": "node --watch ./18-for-in.js",
     "sort": "node --watch ./19-sort.js",
-    "reduce": "node --watch ./20-reduce.js"
+    "reduce": "node --watch ./20-reduce.js",
+    "destruk-rest": "node --watch ./21-destruk-rest.js"
 
     
   },
