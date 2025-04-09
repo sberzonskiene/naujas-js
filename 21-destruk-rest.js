@@ -1,4 +1,4 @@
-// tritaskis - kuriant didesnius objektus
+// destrukturizavimas - tritaskis - kuriant didesnius objektus
 const a1 = [1, 11, 111];
 const a2 = [2, 22, 222];
 const a3 = [3, 11, 333];
@@ -48,3 +48,4 @@ console.log(p4);
 
 const p5 = { d: 4, ...p3, c: 99 };
 console.log(p5);
+

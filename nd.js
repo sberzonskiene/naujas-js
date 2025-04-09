@@ -586,17 +586,66 @@ for  (let i = 2; i < 101; i+=2)
 console.log(suma); 
 
 console.log('-----');
-/*Ciklai
-1. Parašykite for ciklą, kuris apskaičiuotų visų skaičių nuo 5 iki 15 sumą. 
-2. Parašykite for ciklą, kuris į console išvestų visas žodžio ‘Vakaras’ raides po vieną
-3. Parašykite for ciklą, kuris išvestų šešeto daugybos lentelę
-4. Parašykite for ciklą, kuris į consolę išvestų nuo 5 iki 1, ir po vieneto (vietoje 0) į ekraną išvestų žodį ‘BOOM’
-5. Parašykite for ciklą, kuris isudėtų visus lyginius skaičius nuo 3 iki 18 
-6. Parašykite for ciklą, kuris išvestų visus sąrašo elementus į console. 
-7. Parašykite ciklą, kuris iš vardų sąrašo išvestų visus elementus, pridėdamas ‘Mano vardas - ’ console log eilutės pradžioje 
-8. Parašykite for ciklą, kuris sudėtų visus sąrašo skaitinius elementus. 
-9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo 
-10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
+//Ciklai
+//1. Parašykite for ciklą, kuris apskaičiuotų visų skaičių nuo 5 iki 15 sumą. 
+let sum = 0
+for (let i = 5; i <=15; i++) {
+    sum = sum + i
+}
+console.log(sum);
+//2. Parašykite for ciklą, kuris į console išvestų visas žodžio ‘Vakaras’ raides po vieną
+let zodis = 'Vakaras';
+for (let i = 0; i <zodis.length; i++) {
+    raide = zodis[i]
+    console.log(raide)
+}
+//3. Parašykite for ciklą, kuris išvestų šešeto daugybos lentelę
+let n = 6;
+for (let i = 1; i<11; i++) { 
+    console.log(`6 * ${i} = ${6 * i}`);
+}
+console.log('-----');
+//4. Parašykite for ciklą, kuris į consolę išvestų nuo 5 iki 1, ir po vieneto (vietoje 0) į ekraną išvestų žodį ‘BOOM’
+for (let i = 5; i >= 0; i--) {
+    if (i > 0) {
+    console.log(i); 
+}  else {
+    console.log(`'BOOM'`)
+}
+}       
+//5. Parašykite for ciklą, kuris sudėtų visus lyginius skaičius nuo 3 iki 18;
+let lyg = 0
+for (let i = 4; i < 19; i+=2) {
+    lyg = lyg + i
+} 
+console.log(lyg);
+//6. Parašykite for ciklą, kuris išvestų visus sąrašo elementus į console. 
+let elementai = ['rytas', 'diena','vakaras', 'naktis'];
+for (let i = 0; i<elementai.length; i++) {
+    const s = `${elementai[i]}`
+    console.log(s);
+}  
+//7. Parašykite ciklą, kuris iš vardų sąrašo išvestų visus elementus, pridėdamas ‘Mano vardas - ’ console log eilutės pradžioje 
+let names = ['Saulius', 'Estera', 'Juozapas', 'Rebeka'];
+for (let i = 0; i < names.length; i++){
+    let v = `Mano vardas - ${names[i]}.`
+    console.log(v);
+}
+//8. Parašykite for ciklą, kuris sudėtų visus sąrašo skaitinius elementus. 
+const list = [3, 5, 7, 8, 12];
+let sudetis = 0;
+for (let i = 0; i < 5; i++) {
+   sudetis += list[i]
+}
+console.log(sudetis);
+//9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo 
+
+
+
+
+
+
+/*10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
 11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’ 
 12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
 13. Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į consolę reikšmę 
