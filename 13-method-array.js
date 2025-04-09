@@ -235,3 +235,48 @@ console.log(texts5Updated);
 
 const texts5Updated2 = texts5.filter(t => t); 
 console.log(texts5Updated2);
+
+// fill
+const default5 = [0, 0, 0, 0, 0];   // visos reiksmes yra VIENODOS
+const default7 = Array(7).fill(99);
+console.log(default7);
+
+const zeros = Array(10)
+const zeros2 = Array(10).fill(0);
+console.log(zeros);
+console.log(zeros2);
+
+const pozitives = Array(7).fill(true);
+console.log(pozitives);
+
+const emtySpace = Array(8).fill('');
+console.log(emtySpace);
+
+const tiesa5 = Array(5).fill('tiesa');
+console.log(tiesa5);
+
+const demo = [10, 2, 4, 8, 6];
+console.log(demo);
+demo.fill(777)
+console.log(demo);
+
+// every - kiekvienas
+const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];
+const allTreesValid = trees.every(s => s.length >0);
+console.log(allTreesValid);
+
+const allTreesValid5 = trees.every(s => s.length === 5);
+console.log(allTreesValid5);
+
+// some - kai kurie
+const someTreesValid = trees.some(s => s.length >0);
+console.log(someTreesValid);
+
+const someTreesValid5 = trees.some(s => s.length === 5);
+console.log(someTreesValid5);
+
+const someTreesValid10 = trees.some(s => s.length === 10);
+console.log(someTreesValid10);
+
+
+

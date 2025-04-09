@@ -35,7 +35,8 @@
     "ternary": "node --watch ./15-ternary.js",
     "for-of": "node --watch ./16-for-of.js",
     "while": "node --watch ./17-while.js",
-    "for-in": "node --watch ./18-for-in.js"
+    "for-in": "node --watch ./18-for-in.js",
+     "sort": "node --watch ./19-sort.js"
 
     
   },
