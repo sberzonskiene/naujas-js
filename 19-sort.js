@@ -38,5 +38,5 @@ console.log(people);
 people.sort((a, b) => a.name.length - b.name.length);
 console.log(people);
 
-people.sort((a, b) => a.name > b.name ? 1: -1);
+people.sort((a, b) => a.name > b.name ? 1: -1); // vardus paraso pagal abeceles tvarka
 console.log(people);
