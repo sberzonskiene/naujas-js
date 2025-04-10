@@ -562,20 +562,7 @@ for (let i = 5; i * i <= sk; i += 6) {
 } 
 console.log(yraPirm(nr));
 
-/*for (let i = 2; i < 20; i++) {          // Nesigauna
-    if (i%2 === 0 || i%3 === 0) {
-        console.log(i, 'antrinis')
-    } else {
-    if (2/2 === 1 && 3/3 === 1) {
-        console.log(i, 'pirminis')
-    }
-} }
-console.log('--------');
 //8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
-for (let i = 2; i<= 10; i++) {
-    if(i/2 !== 0 || i/3 !== 0) {   // Nesigauna
-        console.log(i)
-}}*/
 console.log('-----');
 //9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
 let suma = 0
@@ -638,10 +625,27 @@ for (let i = 0; i < 5; i++) {
    sudetis += list[i]
 }
 console.log(sudetis);
-//9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo 
-/*10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
-11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’ 
-12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
+console.log('-----');
+//9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo
+let el = [3, 5, 7, 8, 12];
+for (let i = 4; i >= 0; i--) {
+    console.log(el[i]);
+}
+console.log('-----');
+//10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
+for (let i = 1; i <=500; i++) {
+    if ( i === 1 || i === 2 || i === 5 || i === 10 || i === 20 || i === 50 || i === 100 || i === 200 || i === 500)
+    {
+        console.log(i);
+    }
+}
+console.log('-----');
+let pinigai = [1, 2, 5, 10, 20, 50, 100, 200, 500];
+for (let i = 0; i < 9; i++) {
+    console.log(pinigai[i]);
+}
+//11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’  
+/*12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
 13. Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į consolę reikšmę 
 14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
 15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
