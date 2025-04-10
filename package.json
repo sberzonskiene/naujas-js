@@ -38,7 +38,8 @@
     "for-in": "node --watch ./18-for-in.js",
     "sort": "node --watch ./19-sort.js",
     "reduce": "node --watch ./20-reduce.js",
-    "destruk-rest": "node --watch ./21-destruk-rest.js"
+    "destruk-rest": "node --watch ./21-destruk-rest.js",
+    "switch": "node --watch ./22-switch.js"
 
     
   },

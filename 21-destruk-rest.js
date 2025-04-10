@@ -103,7 +103,7 @@ const students = [
     { name: 'Mirjam', age: 22 },
 ];
 
-// Studentui, vardu Jonas, yra 55 metai. Prastinamas kodas:
+// Studentui, vardu Jonas, yra 55 metai. Kaip paprastinamas kodas:
 
 for (let i =0; i < students.length; i++) {
     const student = students[i]
@@ -155,10 +155,26 @@ for ( const [first, ...rest] of numbers) {
     //const [first, ...rest] = numberList;
    // const first = numberList[0];
    // const rest = numberList.slice(1);
-
     const result = `Pirmas skaicius yra ${first} ir dar yra ${rest.length} papildomu skaiciu.`
     console.log(result);
 }
+console.log('-----------');
 
+function min(...list) {
+    let minimum = Infinity;
+    for (const number of list) {
+        if (number < minimum) {
+            minimum = number
+        }
+    }
+    return minimum;
+}
+console.log(min(1));
+console.log(min(1, 2, 3));
+console.log(min(-1, -2, -3));
+console.log(min(-1, -2, -3, -2, -3, -2, -3));
 
+const ddd = [1, 2, 3];
+console.log(Math.min(...ddd));
+console.log(Math.max(...ddd));
 
