@@ -639,12 +639,6 @@ for (let i = 0; i < 5; i++) {
 }
 console.log(sudetis);
 //9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo 
-
-
-
-
-
-
 /*10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
 11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’ 
 12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
