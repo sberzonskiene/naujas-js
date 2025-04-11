@@ -645,9 +645,24 @@ for (let i = 0; i < 9; i++) {
     console.log(pinigai[i]);
 }
 //11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’  
-/*12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
-13. Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į consolę reikšmę 
-14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
+const Raides = ['L','a', 'b', 'a', 's'];
+let zodis2 = '';
+for (i = 0; i < Raides.length; i++) {
+    zodis2 +=Raides[i]
+}  
+console.log(zodis2); 
+//12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
+const Atskirai ='Programavimas';
+for (i = 0; i < Atskirai.length; i++) {
+    console.log(Atskirai[i]);
+}
+//13. Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į consolę reikšmę 
+let daug = 1
+for (i = 2; i < 11; i++) {
+   daug =  daug * i
+} 
+console.log(daug);
+/*14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
 15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
 16. Parašykite for ciklą, kuris į console išvestų sąrašo RaidėsAtbulai [ ‘s’, ‘a’, ‘b’, ‘a’, ‘L’] elementus vienas po kito nuo galo iki pradžios 
 17. Parašykite for ciklą, kuris į console išvestų kintamojo ŽodisAtbulas = ‘samivamargorP’ atskiras raides vieną po kitos 
