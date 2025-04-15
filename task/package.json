@@ -1,0 +1,16 @@
+{
+  "name": "bit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "static": "node --watch ./static.js",
+    "animals": "node --watch ./animals.js",
+    "auto": "node --watch ./auto.js",
+    "index": "node --watch ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
