@@ -661,7 +661,8 @@ let daug = 1
 for (i = 2; i < 11; i++) {
    daug =  daug * i
 } 
-console.log(daug);
+console.log(daug); 
+console.log('-----');
 /*14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
 15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
 16. Parašykite for ciklą, kuris į console išvestų sąrašo RaidėsAtbulai [ ‘s’, ‘a’, ‘b’, ‘a’, ‘L’] elementus vienas po kito nuo galo iki pradžios 
