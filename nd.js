@@ -506,6 +506,7 @@ console.log('-----');
 
 /*4. Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite
 "Even", o prie kiekvieno nelyginio - "Odd".*/
+
 for ( let i = 1; i <+ 20; i++) {
     if ( i%2 === 0) {
         console.log("Even")
@@ -545,6 +546,7 @@ for  (let i = 1; i <= 30; i++) { // kai dalijasi is 2 ir is 3
 console.clear();
 /*7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte
 pranešimą.    isspresta pagal pavyzdi */
+
 let nr = 7;
 function yraPirm (sk) {
     if (sk <= 1) {
@@ -565,6 +567,7 @@ console.log(yraPirm(nr));
 //8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
 console.log('-----');
 //9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
+
 let suma = 0
 for  (let i = 2; i < 101; i+=2) 
 {
@@ -575,24 +578,28 @@ console.log(suma);
 console.log('-----');
 //Ciklai
 //1. Parašykite for ciklą, kuris apskaičiuotų visų skaičių nuo 5 iki 15 sumą. 
+
 let sum = 0
 for (let i = 5; i <=15; i++) {
     sum = sum + i
 }
 console.log(sum);
 //2. Parašykite for ciklą, kuris į console išvestų visas žodžio ‘Vakaras’ raides po vieną
+
 let zodis = 'Vakaras';
 for (let i = 0; i <zodis.length; i++) {
     raide = zodis[i]
     console.log(raide)
 }
 //3. Parašykite for ciklą, kuris išvestų šešeto daugybos lentelę
+
 let n = 6;
 for (let i = 1; i<11; i++) { 
     console.log(`6 * ${i} = ${6 * i}`);
 }
 console.log('-----');
 //4. Parašykite for ciklą, kuris į consolę išvestų nuo 5 iki 1, ir po vieneto (vietoje 0) į ekraną išvestų žodį ‘BOOM’
+
 for (let i = 5; i >= 0; i--) {
     if (i > 0) {
     console.log(i); 
@@ -601,24 +608,28 @@ for (let i = 5; i >= 0; i--) {
 }
 }       
 //5. Parašykite for ciklą, kuris sudėtų visus lyginius skaičius nuo 3 iki 18;
+
 let lyg = 0
 for (let i = 4; i < 19; i+=2) {
     lyg = lyg + i
 } 
 console.log(lyg);
 //6. Parašykite for ciklą, kuris išvestų visus sąrašo elementus į console. 
+
 let elementai = ['rytas', 'diena','vakaras', 'naktis'];
 for (let i = 0; i<elementai.length; i++) {
     const s = `${elementai[i]}`
     console.log(s);
 }  
 //7. Parašykite ciklą, kuris iš vardų sąrašo išvestų visus elementus, pridėdamas ‘Mano vardas - ’ console log eilutės pradžioje 
+
 let names = ['Saulius', 'Estera', 'Juozapas', 'Rebeka'];
 for (let i = 0; i < names.length; i++){
     let v = `Mano vardas - ${names[i]}.`
     console.log(v);
 }
 //8. Parašykite for ciklą, kuris sudėtų visus sąrašo skaitinius elementus. 
+
 const list = [3, 5, 7, 8, 12];
 let sudetis = 0;
 for (let i = 0; i < 5; i++) {
@@ -627,12 +638,14 @@ for (let i = 0; i < 5; i++) {
 console.log(sudetis);
 console.log('-----');
 //9. Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki pirmo
+
 let el = [3, 5, 7, 8, 12];
 for (let i = 4; i >= 0; i--) {
     console.log(el[i]);
 }
 console.log('-----');
 //10. Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės (1, 2, 5, 10, 20, 50, 100, 200, 500) 
+
 for (let i = 1; i <=500; i++) {
     if ( i === 1 || i === 2 || i === 5 || i === 10 || i === 20 || i === 50 || i === 100 || i === 200 || i === 500)
     {
@@ -640,37 +653,87 @@ for (let i = 1; i <=500; i++) {
     }
 }
 console.log('-----');
+
 let pinigai = [1, 2, 5, 10, 20, 50, 100, 200, 500];
 for (let i = 0; i < 9; i++) {
     console.log(pinigai[i]);
 }
 //11. Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį Žodis, kurio reikšmė yra ‘Labas’  
+
 const Raides = ['L','a', 'b', 'a', 's'];
 let zodis2 = '';
-for (i = 0; i < Raides.length; i++) {
+for (let i = 0; i < Raides.length; i++) {
     zodis2 +=Raides[i]
 }  
 console.log(zodis2); 
 //12. Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas raidę. 
+
 const Atskirai ='Programavimas';
-for (i = 0; i < Atskirai.length; i++) {
+for (let i = 0; i < Atskirai.length; i++) {
     console.log(Atskirai[i]);
 }
 //13. Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į consolę reikšmę 
+
 let daug = 1
-for (i = 2; i < 11; i++) {
+for (let i = 2; i < 11; i++) {
    daug =  daug * i
 } 
 console.log(daug); 
 console.log('-----');
-/*14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
-15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
-16. Parašykite for ciklą, kuris į console išvestų sąrašo RaidėsAtbulai [ ‘s’, ‘a’, ‘b’, ‘a’, ‘L’] elementus vienas po kito nuo galo iki pradžios 
-17. Parašykite for ciklą, kuris į console išvestų kintamojo ŽodisAtbulas = ‘samivamargorP’ atskiras raides vieną po kitos 
-18. Parašykite for ciklą, kuris į consolę išveda skaičius nuo 1 iki 100. Jei skaičius dalinasi iš 7, papildomai į consolę yra išvedamas žodis ‘lucky’ 
-19. Parašykite for ciklą, kuris į console po vieną atskirai išvestų dvigubas sąrašo Dvigubinti [2, 3, 6, 8] reikšmes (Gaunamas atsakymas: 4, 6, 12, 16) 
-20. Parašykite for ciklą, kuris iš sąrašo DaugSkaičių [2, 14, 10, 1000, 503, 8, 0] išvestų visus skaičius, kurie yra mažesni už 100 
-21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
+//14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
+
+let nelyginis = 0;
+for (let i = 1; i < 30; i+=2) {
+    nelyginis = nelyginis + i
+}
+console.log(nelyginis); 
+console.log('-----');
+//15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
+
+for (let i = 20; i >=10; i--) 
+{
+    console.log(i); 
+}
+//16. Parašykite for ciklą, kuris į console išvestų sąrašo RaidėsAtbulai [ ‘s’, ‘a’, ‘b’, ‘a’, ‘L’] elementus vienas po kito nuo galo iki pradžios
+
+const RaidėsAtbulai = [ 's', 'a', 'b', 'a', 'L'];
+for (let i = RaidėsAtbulai.length-1; i >=0; i--) {
+    console.log(RaidėsAtbulai[i])
+}
+console.log('-----');
+//17. Parašykite for ciklą, kuris į console išvestų kintamojo ŽodisAtbulas = ‘samivamargorP’ atskiras raides vieną po kitos 
+
+const ZodisAtbulas = 'samivamargorP';
+for(let i = 0; i < ZodisAtbulas.length; i++) {
+    console.log(ZodisAtbulas[i]);
+}
+//18. Parašykite for ciklą, kuris į consolę išveda skaičius nuo 1 iki 100. Jei skaičius dalinasi iš 7, papildomai į consolę yra išvedamas žodis ‘lucky’ 
+
+//let g = 0;
+for(let i = 1; i <= 100; i++) {
+    if (i%7 === 0) {
+        console.log('lucky');
+       }   else {
+            console.log(i);
+    } }
+
+console.log('-----');
+//19. Parašykite for ciklą, kuris į console po vieną atskirai išvestų dvigubas sąrašo Dvigubinti [2, 3, 6, 8] reikšmes (Gaunamas atsakymas: 4, 6, 12, 16)
+
+const dvigubas = [2, 3, 6, 8];
+for (let i = 0; i < 4; i++) {
+   console.log(dvigubas[i]*2);
+}
+console.log('-----');
+//20. Parašykite for ciklą, kuris iš sąrašo DaugSkaičių [2, 14, 10, 1000, 503, 8, 0] išvestų visus skaičius, kurie yra mažesni už 100 
+
+const DaugSkaičiu = [2, 14, 10, 1000, 503, 8, 0];
+for(let i = 0; i < DaugSkaičiu.length; i++) {
+    if (DaugSkaičiu[i] < 100)
+    console.log(DaugSkaičiu[i]);
+    }  
+        
+/*21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
 22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės, jei prie kiekvieno elemento pridėtume dvejetą. 
 23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje Nebeprisikiškiakopūstėliaudavome yra raidžių e 
 24. Parašykite for ciklą, kuris į consolę išvestų kiekvieną žodžio Nebeprisikiškiakopūstėliaudavome e raidę, ir parašytų, kurioje žodžio vietoje ji yra: PVZ: Žodžiui Keletą būtų išvedama: e raidė yra 2 vietoje e raidė yra 4 vietoje 
