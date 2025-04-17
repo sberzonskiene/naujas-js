@@ -712,7 +712,7 @@ console.log('-----');
 //17. Parašykite for ciklą, kuris į console išvestų kintamojo ŽodisAtbulas = ‘samivamargorP’ atskiras raides vieną po kitos 
 
 const ZodisAtbulas = 'samivamargorP';
-for(let i = 0; i < ZodisAtbulas.length; i++) {
+for (let i = 0; i < ZodisAtbulas.length; i++) {
     console.log(ZodisAtbulas[i]);
 }
 //18. Parašykite for ciklą, kuris į consolę išveda skaičius nuo 1 iki 100. Jei skaičius dalinasi iš 7, papildomai į consolę yra išvedamas žodis ‘lucky’ 
@@ -736,20 +736,48 @@ console.log('-----');
 //20. Parašykite for ciklą, kuris iš sąrašo DaugSkaičių [2, 14, 10, 1000, 503, 8, 0] išvestų visus skaičius, kurie yra mažesni už 100 
 
 const DaugSkaičiu = [2, 14, 10, 1000, 503, 8, 0];
-for(let i = 0; i < DaugSkaičiu.length; i++) {
+for (let i = 0; i < DaugSkaičiu.length; i++) {
     if (DaugSkaičiu[i] < 100)
     console.log(DaugSkaičiu[i]);
-    }  
+    } 
+console.log('-----');     
 //21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
-const araides = 'abrakadabra';
-for( let i = 0; i <= araides.length; i++) {
-    count += 'a';
-    console.log(araides);
+
+const text = 'abrakadabra';
+const symbols = {};
+for (const s of text) {
+    if (symbols[s]) {
+        symbols[s]++;
+    } else {
+        symbols[s] = 1
+    }
 }
+ console.log(symbols);
+
+ let max = 0;
+ for (const s in symbols) {
+     if (symbols[s] > max) {
+         max = symbols[s];
+     }
+ }
+ console.log(max);
+// geras
+let text2 = 'abrakadabra'
+let count = 0
+for (i in text2) { 
+    if (text2[i] === 'a') {
+        count++
+    } 
+} 
+console.log(count);
+console.log('-----');
+/*22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės,
+jei prie kiekvieno elemento pridėtume dvejetą. */
 
 
-/*22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės, jei prie kiekvieno elemento pridėtume dvejetą. 
-23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje Nebeprisikiškiakopūstėliaudavome yra raidžių e 
+
+
+/*23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje Nebeprisikiškiakopūstėliaudavome yra raidžių e 
 24. Parašykite for ciklą, kuris į consolę išvestų kiekvieną žodžio Nebeprisikiškiakopūstėliaudavome e raidę, ir parašytų, kurioje žodžio vietoje ji yra: PVZ: Žodžiui Keletą būtų išvedama: e raidė yra 2 vietoje e raidė yra 4 vietoje 
 25. Parašykite for ciklą, kuris išvestų kokia kintamojo let Lobis = 150 reikšmė būtų, jei mes iš jo atimtume reikšmes nuo 20 iki 15. Į consolę išveskite kaip mažėja turtas. 
 Funkcijos 
@@ -788,6 +816,10 @@ b. Skaičius yra neigiamas, išveda į console ‘esu neigiamas’
 c. Skaičius yra nulis, išveda į console ‘esu nulis’ 
 d. Skaičius yra didesnis už 100, išveda ‘didžiulis skaičius’ 
 e. Jei skaičius nėra didesnis už 100, išveda ‘esu mažiukas */
+
+
+
+
 
 
 
