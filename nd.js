@@ -681,12 +681,20 @@ for (let i = 2; i < 11; i++) {
 console.log(daug); 
 console.log('-----');
 //14. Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą 
-
+// 1pav:
 let nelyginis = 0;
 for (let i = 1; i < 30; i+=2) {
     nelyginis = nelyginis + i
 }
 console.log(nelyginis); 
+console.log('-----');
+// 2pav:
+let sum32y = 0
+ for (let i = 0; i <=30 ; i++) { 
+    if (i%2==!0)  //nelygu
+        sum32y+=i;
+}
+console.log(sum32y);
 console.log('-----');
 //15. Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10 
 
