@@ -743,27 +743,8 @@ for (let i = 0; i < DaugSkaičiu.length; i++) {
 console.log('-----');     
 //21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
 
-const text = 'abrakadabra';
-const symbols = {};
-for (const s of text) {
-    if (symbols[s]) {
-        symbols[s]++;
-    } else {
-        symbols[s] = 1
-    }
-}
- console.log(symbols);
-
- let max = 0;
- for (const s in symbols) {
-     if (symbols[s] > max) {
-         max = symbols[s];
-     }
- }
- console.log(max);
-// geras
-let text2 = 'abrakadabra'
-let count = 0
+let text2 = 'abrakadabra';
+let count = 0;
 for (i in text2) { 
     if (text2[i] === 'a') {
         count++
@@ -774,13 +755,43 @@ console.log('-----');
 /*22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės,
 jei prie kiekvieno elemento pridėtume dvejetą. */
 
+const pridetiSk = [2, 8, 88, 14];
+for (let i = 0; i < pridetiSk.length; i++) {
+   console.log(pridetiSk[i] + 2);
+}
+console.log('-----');
+//23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje 'Nebeprisikiškiakopūstėliaudavome' yra raidžių e 
+
+let Ezodis = 'Nebeprisikiškiakopūstėliaudavome';
+let Ecount = 0;
+for (i in Ezodis) {
+    if (Ezodis[i] === 'e') {
+        Ecount++
+    }
+}
+console.log(Ecount);
+console.log('-----');
+/*24. Parašykite for ciklą, kuris į consolę išvestų kiekvieną žodžio Nebeprisikiškiakopūstėliaudavome e raidę,
+ir parašytų, kurioje žodžio vietoje ji yra: PVZ: Žodžiui Keletą būtų išvedama: e raidė yra 2 vietoje e raidė yra 4 vietoje */
+
+let text = 'Nebeprisikiškiakopūstėliaudavome';
+let eraide = 'e';
+for (let i = 0; i < text.length; i++) {
+    if (text.charAt(i) === eraide) {
+        console.log(`${eraide}` + '-->' + i);
+    }
+}
+/*25. Parašykite for ciklą, kuris išvestų kokia kintamojo let Lobis = 150 reikšmė būtų, 
+jei mes iš jo atimtume reikšmes nuo 20 iki 15. Į consolę išveskite kaip mažėja turtas. */
+
+let Lobis = 150;
+for (let i = 20; i >= 15; i--){
+   Lobis = Lobis - i
+    console.log(Lobis);
+}
 
 
-
-/*23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje Nebeprisikiškiakopūstėliaudavome yra raidžių e 
-24. Parašykite for ciklą, kuris į consolę išvestų kiekvieną žodžio Nebeprisikiškiakopūstėliaudavome e raidę, ir parašytų, kurioje žodžio vietoje ji yra: PVZ: Žodžiui Keletą būtų išvedama: e raidė yra 2 vietoje e raidė yra 4 vietoje 
-25. Parašykite for ciklą, kuris išvestų kokia kintamojo let Lobis = 150 reikšmė būtų, jei mes iš jo atimtume reikšmes nuo 20 iki 15. Į consolę išveskite kaip mažėja turtas. 
-Funkcijos 
+/*Funkcijos 
 1. Parašykite funkciją, kuri grąžina dviejų skaičių sumą. 
 2. Parašykite funkciją, kuri grąžina dviejų skaičių skirtumą. 
 3. Parašykite funkciją, kuri grąžina dviejų skaičių sandaugą. 

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
 
+    "text-size": "node --watch ./task/text-size.js",
     "fancy-math": "node --watch ./task/fancy-math.js",
     "string-reverse": "node --watch ./task/string-reverse.js",
     "names-split-join": "node --watch ./task/names-split-join.js",
