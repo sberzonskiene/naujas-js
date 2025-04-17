@@ -740,9 +740,15 @@ for(let i = 0; i < DaugSkaičiu.length; i++) {
     if (DaugSkaičiu[i] < 100)
     console.log(DaugSkaičiu[i]);
     }  
-        
-/*21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
-22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės, jei prie kiekvieno elemento pridėtume dvejetą. 
+//21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra 
+const araides = 'abrakadabra';
+for( let i = 0; i <= araides.length; i++) {
+    count += 'a';
+    console.log(araides);
+}
+
+
+/*22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14] elementų reikšmės, jei prie kiekvieno elemento pridėtume dvejetą. 
 23. Parašykite for ciklą, kuris suskaičiuotų kiek žodyje Nebeprisikiškiakopūstėliaudavome yra raidžių e 
 24. Parašykite for ciklą, kuris į consolę išvestų kiekvieną žodžio Nebeprisikiškiakopūstėliaudavome e raidę, ir parašytų, kurioje žodžio vietoje ji yra: PVZ: Žodžiui Keletą būtų išvedama: e raidė yra 2 vietoje e raidė yra 4 vietoje 
 25. Parašykite for ciklą, kuris išvestų kokia kintamojo let Lobis = 150 reikšmė būtų, jei mes iš jo atimtume reikšmes nuo 20 iki 15. Į consolę išveskite kaip mažėja turtas. 
