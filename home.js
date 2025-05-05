@@ -11,7 +11,6 @@ function kvadratas(n) {
 }
 console.log(kvadratas(5)); // 55
 
-
 const vv = 4
 function sum1(vd) {
 
@@ -42,16 +41,44 @@ function dublikatas (arr) {
 console.log(dublikatas([1, 2, 3, 3, 2, 1, 1, 2, 4, 4]));
 //2 Pav.
 function removeDuplicates(str) {
-    const letters = new Set (str.split(''));
+    const letters = new Set(str.split(''));
     return [...letters].join('');
 }
  console.log(removeDuplicates("konkoreziai"));
 
+//● Parašykite funkciją, kuri grąžina pirmą pasikartojantį elementą masyve.
+
+function firstElement(arr) {
+    const seen = new Set();
+    for (const element of arr) {
+        if (seen.has(element)) {
+            return element;
+        }
+        seen.add(element);
+    }
+    return null; // jei nėra pasikartojančių elementų
+    
+}
+console.log(firstElement([1, 2, 3, 2, 3, 5])); // 2
+console.log(firstElement([1, 2, 3, 4, 5])); // null
+
+//● Parašykite funkciją, kuri patikrina, ar skaičius yra pirminis.
+
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    } return true;
+}
+console.log(isPrime(1)); 
+console.log(isPrime(7)); 
+console.log(isPrime(10)); 
+console.log(isPrime(15)); 
+console.log(isPrime(3));  
 
 
-/*● Parašykite funkciją, kuri grąžina pirmą pasikartojantį elementą masyve.
-● Parašykite funkciją, kuri patikrina, ar skaičius yra pirminis.
-● Parašykite funkciją, kuri grąžina skaičiaus faktorialą.
+
+/*● Parašykite funkciją, kuri grąžina skaičiaus faktorialą.
 ● Parašykite funkciją, kuri patikrina, ar žodis yra palindromas (skaitomas vienodai iš
 abiejų pusių).
 ● Parašykite funkciją, kuri grąžina dažniausiai pasikartojantį elementą masyve.
