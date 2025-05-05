@@ -77,7 +77,6 @@ console.log(isPrime(15));
 console.log(isPrime(3));  
 
 
-
 /*● Parašykite funkciją, kuri grąžina skaičiaus faktorialą.
 ● Parašykite funkciją, kuri patikrina, ar žodis yra palindromas (skaitomas vienodai iš
 abiejų pusių).
