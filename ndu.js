@@ -297,3 +297,14 @@ const masyvas = [1, 3, 14, 7];//ats 14
 14. Parašykite funkciją, kuri iš žodžių sąrašo išrinktų ir grąžintų tik tuos žodžius, kuriuose yra raidė e*/
 
 
+function createRandom() {
+    const chars = "0123456789abcdefghijklmnopqrstuvwxtz!@#$%^&*()_+?:{}[]ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const randomLength = 12;
+    let random = "";
+    for ( let i = 0; i < randomLength; i++ ) {
+      const randomNum = Math.floor(Math.random()*chars.length);
+      random += chars.charAt(randomNum);
+    }
+    return random;
+}
+console.log(createRandom(12));
