@@ -9,6 +9,7 @@ const luckyNumbers = [7, 777, 13, 666, 8, 2];
 console.log(luckyNumbers);
 
 const students = [ 'Jonas', 'Maryte', 'Ona'];
+console.log(students);
 
 const firstNumber = luckyNumbers[0];
 console.log(luckyNumbers);

@@ -19,10 +19,10 @@ console.log(false && false);
 
 console.log('||.......');
 console.log(true || true);
-console.log(true || true);
-console.log(true || true);
-console.log(true || true);
-
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+console.log('||.......');
 console.log(1, true && true || true); 
 console.log(2, true && true || false);
 console.log(3, true && false || true);
@@ -31,7 +31,7 @@ console.log(5, false && true || true);
 console.log(6, false && true || false);
 console.log(7, false && false || true);
 console.log(8, false && false || false);
-
+console.log('||.......');
 console.log(1, true || true && true); 
 console.log(2, true || true && false);
 console.log(3, true || false && true);
@@ -44,7 +44,7 @@ console.log(8, false || false && false);
 //ND: surasyti visas imanomas kombonasijos su && ie || kai yra naudojamos 4 boolean reiksmes
 
 // ND: Kiek gavosi kombinaciju?
-
+console.log('||.......');
 console.log(10, true && true && true && true); 
 console.log(11, true && true && true && false); 
 console.log(12, true && true && false && true); 
@@ -54,6 +54,9 @@ console.log(15, true && true && true || true);
 console.log(16, true && true && true || false); 
 console.log(17, true && true && false || true);
 console.log(18, true && false && true || true);
-console.log(16, false && true && true || true);
+console.log(19, true && true && false || false);
+
+console.log(false === '0');
+console.log(false == '0');
 
 

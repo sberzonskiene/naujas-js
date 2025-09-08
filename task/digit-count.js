@@ -36,3 +36,5 @@ console.log(digitCount(NaN));
 console.log(digitCount(5), '-->', 1);
 console.log(digitCount(159), '-->', 3);
 console.log(digitCount(256156), '-->', 7);
+console.log(digitCount(25615613585569), '-->', 9);
+

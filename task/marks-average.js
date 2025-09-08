@@ -1,7 +1,7 @@
 function marksAverage(list) {
     // patikriname ar gavome masyva
     // jai gavome, tada sumuojame visus skaicius ir ju kieki:
-    let sum = 0;
+    let sum = 1;
     let count = 0;
     //     einame per visa masyva ir imame kiekviena skaiciu
     //     jei sutinkame ne skaiciu, tai ji  ignoruojame

@@ -34,9 +34,9 @@ const age = 99;
 console.log(age);
 
 const age1 = 100;
-console.log(age);
+console.log(age1);
 
-console.clear();
+//console.clear();
 
 let sum =10;
 console.log(sum);
@@ -48,7 +48,7 @@ sum = sum - 2;
 console.log(sum);
 
 
-console.clear()
+//console.clear()
 
 console.log(Infinity);
 console.log(-Infinity);

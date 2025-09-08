@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
+    "index": "node --watch ./task/index.js",
     "text-size": "node --watch ./task/text-size.js",
     "fancy-math": "node --watch ./task/fancy-math.js",
     "string-reverse": "node --watch ./task/string-reverse.js",

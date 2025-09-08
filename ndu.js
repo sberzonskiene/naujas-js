@@ -308,4 +308,3 @@ function createRandom() {
     return random;
 }
 console.log(createRandom(12));
-

@@ -67,6 +67,11 @@ function textSize4(text) {
 
     return 'Tuscias tekstas.';
 }
+console.log(textSize(''));
+console.log(textSize('Labas'));
+console.log(textSize('Labanakt!'));
+console.log(textSize('Virs desimt'));
+console.log(textSize('Labas rytas, Lietuva! Ka tu?'));
 
 function textSize5(text) {
     if (text.length >= 20) {
@@ -85,3 +90,8 @@ function textSize5(text) {
         return 'Tuscias tekstas.';
     }
 }
+console.log(textSize(''));
+console.log(textSize('Labas'));
+console.log(textSize('Labanakt!'));
+console.log(textSize('Virs desimt'));
+console.log(textSize('Labas rytas, Lietuva! Kokia grazi diena!'));

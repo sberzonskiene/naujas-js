@@ -3,7 +3,7 @@ function stringReverse(text) {
 
 // logika: text -> text
 
-    for (let i = text.length -1; i >=0; i--) {
+    for (let i = text.length -1; i >= 0; i--) {
         result += text[i];
     }
     return result;
@@ -38,7 +38,7 @@ function stringReverse(text) {
 
     let result = '';
 
-    for (let i = 0; i <text.length; i++) {
+    for (let i = 0; i < text.length; i++) {
         result = text[i] + result;
     }
     return result;

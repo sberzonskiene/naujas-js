@@ -53,4 +53,7 @@ brisius.changePose();
 console.log(brisius);
 console.log(brisius.changeFurColor('red'));
 console.log(brisius);
+console.log(rex);
+console.log(rex.birthday());
 
+;

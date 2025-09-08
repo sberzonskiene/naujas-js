@@ -15,7 +15,6 @@ if () {} ... else if () ...
 if () {} ... else if () ... else {}
 */
 
-
 console.log('START');
 
 if (4 > 2) {
@@ -38,9 +37,17 @@ console.log('END');
 const temp = -2;
 
 if (temp >= 18) {
-    console.log('Silta');
+    console.log('Silta 🌞');
 } else {
-    console.log('Salta');
+    console.log('Salta 🥶');
+}
+
+const temp3 = 20;
+
+if (temp3 >= 18) {
+    console.log('Silta 🌞');
+} else {
+    console.log('Salta 🥶');
 }
 
 // jei zemiau 0 -> salta
@@ -51,13 +58,13 @@ if (temp >= 18) {
 const temp2 = 5;
 
 if (temp2 < 0) {
-    console.log('Salta');
+    console.log('Salta 🥶');
 } else if (temp2 < 10) {
-    console.log('Meh');
+    console.log('Meh 👀');
 } else if (temp2 < 22) {
-    console.log('Silta');
+    console.log('Silta 🌞');
 } else {
-        console.log('Karsta');
+        console.log('Karsta 😎');
 }
 
 
@@ -68,7 +75,7 @@ if ( 4 !== 4 )  {
 }
 
 if ( 4 === '4' )  {
-    console.l('tenkina');
+    console.log('tenkina');
 }  else {
     console.log('NE-tenkina');
 }

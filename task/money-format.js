@@ -80,4 +80,7 @@ function moneyFormat2(money) {
  
     return money + ' Eur';
 }
- 
+console.log(moneyFormat2(5));
+console.log(moneyFormat2(5.1));
+console.log(moneyFormat2(5.5));
+console.log(moneyFormat2(5.99));
