@@ -31,7 +31,7 @@
     "array": "node --watch ./6-array.js",
     "typeof": "node --watch ./7-typeof.js",
     "for": "node --watch ./8-for.js",
-    "object.js": "node --watch ./9-object.js",
+    "object": "node --watch ./9-object.js",
     "math": "node --watch ./10-math.js",
     "method:string": "node --watch ./11-method-string.js",
     "method:number": "node --watch ./12-method-number.js",

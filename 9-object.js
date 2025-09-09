@@ -69,7 +69,7 @@ console.log(s2);
  
 const student = {
     name: 'Maryte',
-    age: 88,
+    age: 44,
     isMarried: false,
     phoneNumbers: [],
     parents: [

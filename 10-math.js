@@ -23,17 +23,19 @@ console.log(Math.ceil(64));
 // floor
 console.log( '\nfloor');
 console.log(Math.floor(8));
-console.log(Math.floor(8.5));
-console.log(Math.floor(8.9));
+console.log(Math.floor(8.5))
+console.log(Math.floor(-8.5));
+console.log(Math.floor(8.921));
+console.log(Math.floor(-4.552));
 
 // round
 console.log( '\nround');
-console.log(Math.floor(8));
-console.log(Math.floor(8.00001));
-console.log(Math.floor(8.4999999));
-console.log(Math.floor(8.5));
-console.log(Math.floor(8.9));
-console.log(Math.floor(8.9999999));
+console.log(Math.round(8));
+console.log(Math.round(8.00001));
+console.log(Math.round(8.4999999));
+console.log(Math.round(-8.50));
+console.log(Math.round(8.9));
+console.log(Math.round(-8.9999999));
 
 // trunc
 console.log( '\ntrunc');
@@ -98,7 +100,8 @@ console.log( '\nrandom');
 console.log(Math.random());
 console.log(Math.random());
 console.log(Math.random());
-
+console.log(Math.random());
+console.log('------------');
 // Random skaicius nuo 0 iki 10   [0..9] arba [0..10)
 
 // Random skaicius 3 arba 7
@@ -107,11 +110,11 @@ console.log(Math.random());
 let count3 = 0
 let count7 = 0
 
-for (let i=0; i<10; i++) {
+for (let i = 0; i < 10; i++) {
     console.log(Math.random());
 }
 
-for (let i=0; i<1000000; i++) {
+for (let i = 0; i < 1000000; i++) {
     if (Math.random() < 0.5) {
         count3++;
     } else {
@@ -119,7 +122,7 @@ for (let i=0; i<1000000; i++) {
     }
 }
 console.log(count3, count7);
-
+console.log('------------');
 //[13..149]
 
 function randomNumber(min, max) {
@@ -130,16 +133,19 @@ console.log(randomNumber(1, 10));
 console.log(randomNumber(1, 10));
 console.log(randomNumber(1, 10)); 
 
+console.log('--------------');
 
 const counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-for (let i=0; i<1000000; i++) {
+for (let i = 0; i < 1000000; i++) {
     const index = randomNumber (0, 9);
     counts[index]++;
 }
 console.log(counts);
 
+console.log('--------------');
+
 const counts2 = [0, 0];
-for (let i=0; i<1000000; i++) {
+for (let i = 0; i < 1000000; i++) {
     const index = randomNumber (0, 1);
     counts2[index]++;
 }

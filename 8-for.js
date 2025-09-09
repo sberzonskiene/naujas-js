@@ -7,7 +7,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 for (let i = -5; i < 5; i++) {
-    console.log('a) number:', i);
+    console.log('b) number:', i);
 }
 
 
@@ -20,22 +20,22 @@ console.log('number:', 3);
 console.log('number:', 4);
 
 for (let i = 2; i < 5; i++) {
-    console.log('a) number:', i);
+    console.log('c) number:', i);
 }
 console.log('-----');
 
 for (let i = 1; i <= 5; i++) {
-    console.log('b)number:', i);
+    console.log('d) number:', i);
 }
 console.log('-----');
 
 for (let i = 2; i <= 7; i++) {
-    console.log('b)number:', i);
+    console.log('e) number:', i);
 }
 console.log('-----');
 
 for (let i = 5; i >= 0; i--) {
-    console.log('c)number:', i);
+    console.log('f) number:', i);
 
 }
 
@@ -50,12 +50,12 @@ k++;
 // 0, 1, 2, 3, 4, ....
 //0, 2, 4, 6, 8, .....
 
-for (let i=0; i<11; i+=2) {
+for (let i=0; i < 11; i += 2) {
     console.log('kas du:', i);
 }
 console.log('-----');
 
-for (let k= 0; k < 1; k+= 0.1) {
+for (let k= 0; k < 1; k += 0.1) {
     console.log(k);
 }
 //nenaudoti skaiciu pvz: 0.1; 0.2 ir t.t.
@@ -137,5 +137,10 @@ for (let z = 0; z < zodziai.length; z++) {
     const v = `Zodis "${zodis}" yra sudarytas is ${zodis.length} raidziu.`;
     console.log(v);
 }
+console.log('------');
 
-
+let i, x = '';
+for (i = 0; i < 5; i = i + 2) {
+  x += i;
+}
+console.log(x);
