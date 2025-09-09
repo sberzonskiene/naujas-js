@@ -34,6 +34,8 @@ for ( let i = 0; i < numbers.length; i++) {
 }
 console.log(doubleNumbers);
 
+console.log('-----------');
+
 const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
 const nameSize = [];
 const nameFirstLetters = [];
@@ -43,10 +45,11 @@ for (let i = 0; i < names.length; i++) {
     const name = names[i];
     console.log('---', name, name.length);
 
-    nameSize.push(name.length);
-    nameFirstLetters.push(name[0]);
-    upperCaseNames.push(name.toUpperCase());
+     nameSize.push(name.length);
+     nameFirstLetters.push(name[0]);
+     upperCaseNames.push(name.toUpperCase());
 }
+console.log('------------');
 
 console.log(nameSize);
 console.log(nameFirstLetters);
@@ -147,7 +150,7 @@ console.log(h);
 h.splice(1, 2);
 console.log(h);
 
-console.clear();
+//console.clear();
 
 // MAP
 const k = [10, 2, 8,4, 6];
@@ -277,6 +280,5 @@ console.log(someTreesValid5);
 
 const someTreesValid10 = trees.some(s => s.length === 10);
 console.log(someTreesValid10);
-
 
 
