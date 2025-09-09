@@ -79,15 +79,13 @@ console.log(parseFloat('-44'));
 console.log(parseFloat('-44.4')); // paima tik viena karta po kablelio
 console.log(parseFloat('44,4'));
 console.log(parseFloat('-44,4'));
-
+console.log('-------');
 console.log(parseFloat('55.66labas'));
 console.log(parseFloat('labas55.66'));
 console.log(parseFloat('55.66la55.66bas55.66'));
 console.log(parseFloat('55.66.77'));
 console.log(parseFloat('-5-5'));
 console.log(parseFloat('-55'));
-
-console.log(parseFloat('44'));
 console.log(parseFloat('44'));
 
 // Number.EPSILON - paziureti patiems
@@ -99,14 +97,17 @@ console.log(typeof a); // sukuria 'stringa'
 console.log(typeof typeof a);
 console.log(typeof 'number');
 console.log('string');
+console.log('-------');
 
-const b = a.toFixed(4); // paima atitinkama kieki skaiciaus po kableio sukurti naujam skaiciui
+const b = a.toFixed(4); // paima atitinkama kieki skaiciaus po kablelio sukurti naujam skaiciui
 console.log(b);
 console.log(typeof b);
+console.log('-------');
 
 const c = parseFloat(b); // type of jau supranta kaip skaiciu
 console.log(c);
 console.log(typeof c);
+console.log('-------');
 
 console.log(3.14.toFixed(0));
 console.log(3.14.toFixed(1));
