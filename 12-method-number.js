@@ -4,14 +4,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(Number.MIN_SAFE_INTEGER);
-
 console.log(Number.NEGATIVE_INFINITY);
 console.log(Number.POSITIVE_INFINITY);
+
+console.log('-------');
 
 console.log(isFinite(5), Number.isFinite(5));
 console.log(isFinite(-3.14), Number.isFinite(-3.14));
 console.log(isFinite(NaN),Number.isFinite(NaN));
 console.log(isFinite(Infinity),Number.isFinite(Infinity));
+console.log(isFinite([]),Number.isFinite([]));
+console.log(isFinite({}),Number.isFinite({}));
+console.log(isFinite(true),Number.isFinite(true));
+console.log(isFinite(false),Number.isFinite(false));
 
 console.log('-------');
 
@@ -24,6 +29,7 @@ console.log(Number.isInteger(Infinity));
 console.log(Number.isInteger('asdf'));
 console.log(Number.isInteger(true));
 console.log(Number.isInteger([]));
+console.log(Number.isInteger({}));
 
 console.log('-------');
 
@@ -31,7 +37,6 @@ console.log(Number.isNaN(5));
 console.log(Number.isNaN(3.14));
 console.log(Number.isNaN(Infinity));
 console.log(Number.isNaN(NaN));
-
 console.log(Number.isNaN('asdf'), isNaN('asdf'));
 
 console.log('-------');
