@@ -13,6 +13,7 @@ console.log(text[0]);
 console.log(text[text.length -1]);
 
 // at
+console.log('\nat');
 console.log('--', text.at(0));
 console.log('--', text.at(1));
 console.log('--', text.at(2));
@@ -39,7 +40,7 @@ console.log('Pomidoras'.startsWith('doras'));
 console.log('Pomidoras'.startsWith('Pomidoras'));
 
 // endstWith
-console.log('\nstartWith');
+console.log('\nendsWith');
 console.log('Pomidoras'.endsWith('s'));
 console.log('Pomidoras'.endsWith('as'));
 console.log('Pomidoras'.endsWith('P'));
@@ -59,17 +60,20 @@ console.log('Pomidoras'.indexOf('x'));
 console.log('Pomidoras'.indexOf('o', 0));
 console.log('Pomidoras'.indexOf('o', 1));
 console.log('Pomidoras'.indexOf('o', 2));
+console.log('Kukuruzas'.indexOf('u', 4));
 
 console.log('-----')
 
 console.log('Kulverstukas'.indexOf('u'));
 console.log('Kulverstukas'.indexOf('u', 2));
+console.log('Kulverstukas'.indexOf('K'));
+console.log('Kulverstukas'.indexOf('k', 1));
 
 const k = 'Kulverstukas'
 console.log(k.indexOf('s'));
 console.log(k.indexOf('s', k.indexOf('s'), +1));
 
-console.clear();
+//console.clear();
 
 // repeat
 console.log('\nrepeat');
@@ -110,7 +114,7 @@ console.log(summer1);
 const summer2 = 'vasara'.replace('a', '-').replace('a', '-'). replace('a', '-');
 console.log(summer2);
 
-const cloud = 'debeselis'.replace('u','***');
+const cloud = 'debeselis'.replace('i','*');
 console.log(cloud);
 
 const cloud1 = 'debeselis'.replace('e','***');
@@ -120,7 +124,7 @@ const cloud2 = 'debeselis'.replace('ebe','*'.repeat(3));
 console.log(cloud2);
 
 // replaceAll
-console.log('\nreplace');
+console.log('\nreplaceAll');
 
 console.log('vasara');
 console.log('vasara'.replaceAll('a', '-'));
@@ -150,7 +154,7 @@ console.log('pomidoras'.slice());
 console.log('pomidoras'.slice(0));
 console.log('pomidoras'.slice(1));
 console.log('pomidoras'.slice(4));
-
+console.log('---------');
 console.log('pomidoras'.slice(0, 1));
 console.log('pomidoras'.slice(0, 2));
 console.log('pomidoras'.slice(0, 4));
@@ -161,7 +165,6 @@ console.log('pomidoras'.slice(0, -1));
 console.log('pomidoras'.slice(3, -3));
 console.log('pomidoras'.slice(-4));
 console.log('pomidoras'.slice(-6, -2));
-
 
 // trim
 console.log('\ntrim');
@@ -198,15 +201,15 @@ console.log('ana'.split('a'));
 console.log('vasara'.split(''));
 
 const t4 = 'Labas. Ka veiki. Kaip gyveni.'
-const sentenceCount = t4.split('.').length -1;
+const sentenceCount = t4.split('.').length -1; 
 console.log(sentenceCount);
+console.log(t4);
 
 // charCodeAt
 console.log('\ncharCodeAt');
 
 console.log('a'.charCodeAt(0));
 console.log('A'.charCodeAt(0));
-
 
 if ( 'A' > 'a') {
     console.log('daugiau');
