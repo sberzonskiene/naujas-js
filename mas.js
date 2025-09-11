@@ -22,8 +22,8 @@ const b = [10, 20, 30, 50];
 b.splice(3, 0, 40);
 console.log(b);
 
-const c = ['a', 'b', 'c', 'd'];
-c.splice(2, 1, 5);
+const c = ['a', 'b', 'c', 'd', 'u'];
+c.splice(2, 2, 5);
 console.log(c);
 
 const diena = ['kokia', 'grazi', 'diena'];
@@ -66,4 +66,18 @@ console.log(agggg.length);
 
 console.log(typeof []);
 
+console.log("----------");
 
+for (let i = 0;  i < 5; i++ ) {
+    if (i == '2') 
+        {continue}
+     console.log(i); 
+}
+
+console.log("----------");
+
+for (i = 0;  i < 5; i++ ) {
+    if (i === 2)
+        {break};
+    console.log(i)
+}
