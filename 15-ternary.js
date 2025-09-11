@@ -11,7 +11,7 @@ console.log(zodis);
 let skaicius = 0;
 
 if(7 <= 5) {
-    sakicius = 7 ;
+    skaicius = 7 ;
 } else {
     skaicius = 5;
 }

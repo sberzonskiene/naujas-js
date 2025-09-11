@@ -30,3 +30,4 @@ for (const name1 of names1)
 console.log(namesSizes);
 
 
+
