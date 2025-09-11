@@ -134,14 +134,15 @@ console.log(c123);
 
 const c111 = c1.concat(c1, c1);
 console.log(c111);
+console.log('-----spl-------');
 
 const h = [11, 22, 33, 44, 55];
 console.log(h);
 
-h.splice(0);
-console.log(h);
+//h.splice(0);
+//console.log(h);
 
-h.splice(1);
+h.splice(4);
 console.log(h);
 
 h.splice(0, 1);
@@ -150,10 +151,10 @@ console.log(h);
 h.splice(1, 2);
 console.log(h);
 
-//console.clear();
+console.log('------------');
 
 // MAP
-const k = [10, 2, 8,4, 6];
+const k = [10, 2, 8, 4, 6];
 const k2 = [];
 
 for (const n of k) {
@@ -168,6 +169,7 @@ function triple(n) {
 const k3 = k.map(triple);
 console.log(k3);
 
+console.log('----k4------');
 const quadro = n => n * 4;
 const k4 = k.map(quadro);
 console.log(k4);
@@ -213,6 +215,7 @@ const peopleMarried = people.map(person => {
 console.log(peopleMarried);
 
 // FILTER
+console.log('\nFilter');
 const p = [10, 2, 8, 4, 6];
 const p5 = [];
 
@@ -265,14 +268,14 @@ console.log(demo);
 
 // every - kiekvienas
 const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];
-const allTreesValid = trees.every(s => s.length >0);
+const allTreesValid = trees.every(s => s.length > 0);
 console.log(allTreesValid);
 
 const allTreesValid5 = trees.every(s => s.length === 5);
 console.log(allTreesValid5);
 
 // some - kai kurie
-const someTreesValid = trees.some(s => s.length >0);
+const someTreesValid = trees.some(s => s.length > 0);
 console.log(someTreesValid);
 
 const someTreesValid5 = trees.some(s => s.length === 5);

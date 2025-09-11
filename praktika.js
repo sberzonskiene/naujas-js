@@ -359,5 +359,3 @@ console.log(listSize1);
     console.log('Bandykite kita karta');
  }
 
-
-
