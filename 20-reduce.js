@@ -45,4 +45,3 @@ console.log(abr);
 
 const abr2 = names.reduce((total, name) => total + name[0] + '.', '');
 console.log(abr2);
-

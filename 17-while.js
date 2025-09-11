@@ -1,7 +1,7 @@
 const marks = [10, 2, 8, 4, 6];
 let sum = 0;
 
-for (let i = 0; i< marks.length; i++) {
+for (let i = 0; i < marks.length; i++) {
     sum += marks[i];
 }
 console.log(sum);
@@ -21,4 +21,3 @@ while (sum3 < 1000000) {
 }
 console.log(count);
 console.log(sum3);
-

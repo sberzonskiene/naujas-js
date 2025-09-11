@@ -11,6 +11,8 @@ for (const key of keys) {
     console.log(person[key]);
 }
 
+console.log('\nfor-in');
+
 // for-in dirba tik su objektais
 for (const key in person) {
     console.log(person[key]);
@@ -18,7 +20,7 @@ for (const key in person) {
 
 // 1)
 const text = 'Labas';
-// 2)
+// 2) 
 const counts = {
     'L': 1,
     'a': 2,
