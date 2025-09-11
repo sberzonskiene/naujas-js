@@ -105,7 +105,7 @@ const students = [
 
 // Studentui, vardu Jonas, yra 55 metai. Kaip paprastinamas kodas:
 
-for (let i =0; i < students.length; i++) {
+for (let i = 0; i < students.length; i++) {
     const student = students[i]
     const name = student.name;
     const age = student.age;
@@ -113,7 +113,7 @@ for (let i =0; i < students.length; i++) {
     console.log(result);
 }
 console.log('-----------');
-for (let i =0; i < students.length; i++) {
+for (let i = 0; i < students.length; i++) {
     const { name, age } = students[i]
     const result = `Studentui, vardu ${name}, yra ${age} metai.`;
     console.log(result);
@@ -177,4 +177,3 @@ console.log(min(-1, -2, -3, -2, -3, -2, -3));
 const ddd = [1, 2, 3];
 console.log(Math.min(...ddd));
 console.log(Math.max(...ddd));
-

@@ -2,7 +2,7 @@ const day = 1;
 let dayName = '';
 
 if(day === 1) {
-    dayName = 'pirmadienus';
+    dayName = 'pirmadienis';
 } else if (day === 2) {
     dayName = 'antradienis';
 } else if (day === 3) {
@@ -84,5 +84,4 @@ switch (day3) {
         break;              
 }
 console.log(day3Name);
-
 
